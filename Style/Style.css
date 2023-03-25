@@ -1,0 +1,150 @@
+/* en la linea numero 2 esta importando desde google fonds el tipo de letra y lo hace por medio del link. */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #333;
+	color: #fff;
+}
+/* En la etiqueta body se esta asiganado el color de fondo, tamaño de letra y color de letra.cara-cinco */
+
+header {
+	padding: 20px;
+}
+/* el la etiqueta header, no esta dando un espaceado de izquiera a derecha a lso textos. */
+h1{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* En la etiqueta de H! se le estadadno tamaño al titulo y transforma a  mayusuclas el h1 */
+
+p{
+	font-weight: 300px;
+}
+/* en la etiqueta p, se le esta dadon un tamaño de 300 pixeles al parrafo */
+
+a {
+	color: gray;
+}
+/* se le esta asignando color al hipervinculo. */
+section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* en la clase section estamos indicando que trabajeremos con flexbx
+segundo, se le indica con justify content que nos centre y wrap que los
+elementos que este en el contedor se ajusten automaticamente unos dejaos de los
+otros. */
+[class^="cara-"]{
+	display: flex;
+	margin: 1em;
+	width: 150px;
+	height: 150px;
+	padding: 15px;
+	background: #FEFEF6;
+	border-radius: 10%;
+}
+/* en la clase class se estan llmando a todos los elementos
+que contengan la palabra "cara" las organice
+les de una alto,ancho espaciado entre los elementos
+un fondo color blanco y redonde los bordes de cada elemento. */
+
+.cara-uno{
+	justify-content: center;
+	align-items: center;
+}
+/* en la clase cara-uno se le estadadno la ubicacion
+del punto qeu se ajuste al centro. */
+
+.cara-dos{
+	justify-content: space-between;
+}
+/* se le esta indicando a la cara-dos que el punto numero 1
+se ajuste en la parte supeior izquierda */
+
+.cara-dos .punto:nth-child(2){
+	align-self: flex-end;
+}
+/* se le esta indicando en la clase cara-dos y en el punto 2
+que se ubique en la parte final inferior. */
+
+.cara-tres{
+	justify-content: space-between;
+}
+/* se le esta indicando a la cara-tres que el punto numero 1
+se ajuste en la parte supeior izquierda */
+
+.cara-tres .punto:nth-child(2){
+	align-self: center;
+}
+/* se le esta indicando en la clase cara-tres y en el punto 2
+que se ubique en el centro. */
+
+.cara-tres .punto:nth-child(3){
+	align-self: flex-end;
+}
+/* se le esta indicando en la clase cara-tres y en el punto 2
+que se ubique en la parte final inferior. */
+
+.cara-cuatro{
+	justify-content: space-between;
+}
+/* se le esta indicando en la clase cara-cuatro
+sque el punto se ajuste en la parte superior izquierda*/
+
+.cara-cuatro .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* se le esta indicando en la clase cara-cuatro que me divida los puntos por
+columnas y me con space between me los ajusta a los extremos.*/
+
+
+.cara-cinco{
+	display: flex;
+	justify-content: space-between;
+}
+/* se le esta indcando que en la clase cara-cinco con space between lo ajuste a la esquina superior izquiera.cara-cinco */
+
+.cara-cinco .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* se le esta indcando que en la clase cara-cinco y columna, que me ajuste los puntos
+en dos columnas y con space between me las deje en las esquinas. */
+
+.cara-cinco .medio{
+	align-self: center;
+}
+/* en la clase cara-cinco  y medio se le esta indicando que el punto se ajuste al centro con justify-content
+center. */
+
+.cara-seis{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* en la clase cara-seis se indica con justify-content que los elementos se ubiquen en los extremos. */
+
+.cara-seis .columna{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* en la clase cara-seis y columnase indica con justify-content que las columnas se ubiquen a los extremos. */
+
+.punto {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: black;
+	box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+/* en la clase punto se le estan dando todas las carecteristicas al punto, alto ancho dorde color. */

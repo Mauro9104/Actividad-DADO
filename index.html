@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- doctype no estan indicando que el documento es de tipo html -->
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Dado con Flexbox</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Un dado hecho apartir de Flexbox, css puro, no sass">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./Style/Style.css">
+    <!-- en el head se incluyen todos los metadatos y la extenciones de nuestra hoja de estylos. -->
+</head>
+<body>
+    <!-- tenemos un header donde esta ubicado el nombre caracteristido del proyecto y especificacion del mismo -->
+	<header>
+	<h1>Dado hecho con Flexbox</h1>
+	<p>Basado en el <a href="https://davidwalsh.name/flexbox-dice">post</a> de Landon Schropp.</p>
+	<p>Este ejercicio es una práctica para aprender las propiedades básicas del layout Flexbox</p>
+	</header>
+     <!-- section es el contenedor padre, donde estaran almacenados todos los contenedores. -->
+	<section>
+		<div class="cara-uno">
+			<span class="punto"></span>
+		</div>
+
+		<div class="cara-dos">
+			<span class="punto"></span>
+			<span class="punto"></span>
+		</div>
+		<div class="cara-tres">
+			<span class="punto"></span>
+			<span class="punto"></span>
+			<span class="punto"></span>
+		</div>
+		<div class="cara-cuatro">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+		</div>
+		<div class="cara-cinco">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<span class="punto medio"></span>
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+		</div>
+		<div class="cara-seis">
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+			<div class="columna">
+				<span class="punto"></span>
+				<span class="punto"></span>
+				<span class="punto"></span>
+			</div>
+            <!-- tenemos 6 contenedores que son las 6 caras de lso dados cada cara es 1 contenedor y adicional
+            un span que es el punto que esta dentro de cada contender, en cada contendor nos indca
+            la cantidad de puntos que tendra cada uno. -->
+		</div>
+	</section>
+</body>
+</html>
